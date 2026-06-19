@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #E5A93C;
+  --color-accent-dim: rgba(229, 169, 60, 0.15);
+  --color-bg: #0d0d0d;
+  --color-text: #f5f5f5;
+  --color-text-dim: #888888;
+  --color-card-bg: rgba(255, 255, 255, 0.03);
+  --color-card-border: rgba(255, 255, 255, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  background: #0d0d0d;
+  color: #888888;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.06); border-radius: 2px; }
+
+/* ── Glass nav ── */
+.glass {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background: rgba(13, 13, 13, 0.75);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ── Gradient text (used in Hero) ── */
+.text-gradient {
+  background: linear-gradient(135deg, #f5f5f5 0%, #888888 50%, #E5A93C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── CORE CARD CLASS ── */
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ── CARD HOVER: amber flip ── */
+.card-lift:hover {
+  background: #E5A93C;
+  color: #000000;
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(229, 169, 60, 0.18);
+  border-color: transparent;
+}
+.card-lift:hover * {
+  color: #000000 !important;
+}
+
+/* ── Pill tag ── */
+.tag {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 9999px;
+  padding: 6px 16px;
+  font-size: 13px;
+  color: #888888;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.tag:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #f5f5f5;
+}
+
+/* ── Section title: uppercase + arrow ── */
+.section-title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #E5A93C;
+  margin-bottom: 12px;
+}
+.section-heading {
+  font-size: 48px;
+  font-weight: 800;
+  color: #f5f5f5;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+
+/* ── Stat number ── */
+.stat-number {
+  font-size: 48px;
+  font-weight: 800;
+  color: #E5A93C;
+  line-height: 1;
+}
+
+/* ── Hover link underline ── */
+.hover-underline {
+  position: relative;
+}
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #E5A93C;
+  transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-underline:hover::after {
+  width: 100%;
+}
