@@ -38,7 +38,7 @@ export default function Navbar() {
           href="#"
           className="text-base font-medium tracking-[0.16em] text-[#ededee] transition-colors duration-500"
         >
-          WINS DUAN
+          DUAN
         </a>
 
         {/* Desktop links */}

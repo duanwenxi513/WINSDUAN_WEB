@@ -49,7 +49,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
           className="text-[#5c5c63] text-xs lg:text-sm tracking-[0.28em] uppercase mb-8 font-medium"
         >
-          Visual Designer &amp; Brand Strategist
+          Builder · Creator · Storyteller
         </motion.p>
 
         <motion.h1
@@ -69,8 +69,8 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.65, ease: [0.22, 1, 0.36, 1] }}
           className="text-[#8b8b90] text-base lg:text-lg max-w-lg mb-16 font-light leading-relaxed"
         >
-          Brand identity, digital products, and AI-driven visual experiences —
-          crafted with clarity and purpose.
+          金融数学在读，对 AI 充满热情。喜欢摄影、做视频、捣鼓各种有意思的事。
+          不给自己设限，在数学、技术与创作的交叉地带慢慢探索。
         </motion.p>
 
         <motion.div
@@ -80,10 +80,10 @@ export default function HeroSection() {
           className="flex gap-4"
         >
           <a href="#projects" className="btn-primary">
-            View My Work
+            查看我的作品
           </a>
           <a href="#contact" className="btn-ghost">
-            Get in Touch
+            联系我
           </a>
         </motion.div>
       </div>

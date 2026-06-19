@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import { FiMail, FiMapPin, FiDownload } from "react-icons/fi";
+import { FiMail, FiMapPin } from "react-icons/fi";
 
 const stats = [
-  { value: "50+", label: "作品项目" },
-  { value: "30+", label: "合作客户" },
-  { value: "8+", label: "年经验" },
+  { value: "10W+", label: "全平台播放" },
+  { value: "2", label: "科研项目" },
+  { value: "大二", label: "金融数学在读" },
 ];
 
 export default function AboutSection() {
@@ -36,33 +36,26 @@ export default function AboutSection() {
             <div className="relative mb-12">
               <div className="w-48 h-48 lg:w-56 lg:h-56 rounded-full border border-[rgba(255,255,255,0.06)] flex items-center justify-center bg-[rgba(255,255,255,0.015)]">
                 <span className="text-[#ededee] text-7xl font-light tracking-tighter">
-                  W
+                  D
                 </span>
               </div>
             </div>
 
             <h2 className="text-[36px] font-semibold text-[#ededee] mb-4 tracking-[-0.02em]">
-              Wins Duan
+              Duan
             </h2>
             <p className="text-[#5c5c63] text-sm tracking-[0.14em] uppercase mb-12 font-medium">
-              Visual Designer / AI Designer
-              <br />
-              Brand Strategist
+              金融数学 / AI / 摄影 / 内容创作
             </p>
-
-            <a href="#" className="btn-primary mb-12">
-              <FiDownload size={14} />
-              下载简历 PDF
-            </a>
 
             <div className="flex flex-col gap-4 text-sm text-[#8b8b90] font-light">
               <span className="flex items-center gap-3 justify-center lg:justify-start">
                 <FiMapPin size={13} className="text-[#5c5c63]" />
-                Shanghai, China
+                北京化工大学
               </span>
               <span className="flex items-center gap-3 justify-center lg:justify-start">
                 <FiMail size={13} className="text-[#5c5c63]" />
-                hello@winsduan.com
+                2359628970@qq.com
               </span>
             </div>
           </motion.div>
@@ -75,12 +68,16 @@ export default function AboutSection() {
             transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           >
             <p className="text-base leading-relaxed text-[#8b8b90] mb-8 font-light">
-              我是一名跨领域设计师，深耕视觉品牌设计、AI 驱动创意工具与用户体验设计。
-              擅长在美学与技术的交汇处创造具有持久印象的品牌体验。
+              我目前在北京化工大学读金融数学，大二。
+            </p>
+            <p className="text-sm leading-relaxed text-[#5c5c63] mb-4 font-light">
+              平时喜欢折腾的东西比较杂——数学、AI、摄影、做视频，都在玩。不是什么都会，但对自己感兴趣的事情愿意花时间钻下去。
+            </p>
+            <p className="text-sm leading-relaxed text-[#5c5c63] mb-4 font-light">
+              目前在同时跟两个科研项目，一个交通一个金融，都与人工智能结合比较紧密，边做边学，慢慢积累。
             </p>
             <p className="text-sm leading-relaxed text-[#5c5c63] mb-16 font-light">
-              过去八年，我先后与多家创业公司、设计机构和全球品牌合作，覆盖数字产品设计、
-              品牌策略与创意指导。我注重用设计解决问题，用视觉传递价值，用技术拓展创意的边界。
+              业余做内容创作，发过一些视频，目前全平台累计播放量刚过 10 万，还在摸索中。摄影拍了一段时间，积累了一些自己还算满意的作品。
             </p>
 
             <div className="grid grid-cols-3 gap-10">

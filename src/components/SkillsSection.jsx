@@ -2,27 +2,26 @@ import { motion } from "framer-motion";
 
 const skillGroups = [
   {
-    category: "UI 设计",
-    tags: ["界面设计", "交互原型", "Figma", "设计系统", "高保真", "用户旅程图"],
+    category: "学术与技术",
+    tags: ["金融数学", "Python", "数据分析", "AI 工作流", "提示工程", "科研方法论"],
   },
   {
-    category: "品牌视觉",
-    tags: ["品牌策略", "Logo 设计", "视觉系统", "字体排印", "色彩体系", "VI 规范"],
+    category: "视觉与内容",
+    tags: ["摄影", "视频创作", "自媒体运营", "内容策划", "剪辑后期"],
   },
   {
-    category: "动效交互",
-    tags: ["微交互动画", "转场设计", "Lottie", "Rive", "Principle"],
+    category: "AI 工具链",
+    tags: ["Stable Diffusion", "ComfyUI", "图像生成", "AI 辅助思考", "效率工具"],
   },
   {
-    category: "AI 设计",
-    tags: ["AI 工作流", "提示工程", "图像生成", "ComfyUI", "Stable Diffusion"],
+    category: "软实力",
+    tags: ["快速学习", "跨领域探索", "逻辑思维", "信息搜集", "团队协作"],
   },
 ];
 
 export default function SkillsSection() {
   return (
     <section className="relative py-32 lg:py-40">
-      {/* Ambient light */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full opacity-[0.03] pointer-events-none"
         style={{
@@ -40,7 +39,7 @@ export default function SkillsSection() {
           className="mb-24"
         >
           <p className="section-label">Skills</p>
-          <h2 className="section-heading">核心优势</h2>
+          <h2 className="section-heading">擅长领域</h2>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
