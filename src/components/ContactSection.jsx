@@ -27,7 +27,7 @@ export default function ContactSection() {
 
       {/* ── Testimonials ── */}
       <div className="py-32 lg:py-40">
-        <div className="max-w-[1200px] mx-auto px-6 lg:px-20">
+        <div className="w-full max-w-7xl mx-auto px-6 lg:px-16">
 
           <motion.div
             initial={{ opacity: 0, y: 24 }}

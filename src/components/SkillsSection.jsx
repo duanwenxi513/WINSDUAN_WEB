@@ -30,7 +30,7 @@ export default function SkillsSection() {
           filter: "blur(100px)",
         }}
       />
-      <div className="max-w-[1200px] mx-auto px-6 lg:px-20 relative z-10">
+      <div className="w-full max-w-7xl mx-auto px-6 lg:px-16 relative z-10">
 
         <motion.div
           initial={{ opacity: 0, y: 24 }}
