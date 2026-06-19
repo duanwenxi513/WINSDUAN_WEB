@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { FiArrowDown } from "react-icons/fi";
-const heroBg = "/WINSDUAN_WEB/hero-bg.png";
+import heroBg from "../assets/hero-bg.png";
 
 export default function HeroSection() {
   const parallaxRef = useRef(null);
